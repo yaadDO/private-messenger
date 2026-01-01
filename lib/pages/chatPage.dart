@@ -138,7 +138,7 @@ class _ChatPageState extends State<ChatPage> {
           Expanded(
             child: text1(
               controller: _messageController,
-              hintText: "Type a message..",
+              hintText: "Type a message...",
               obscureText: false,
               focusNode: myFocusNode,
             ),
