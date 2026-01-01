@@ -22,12 +22,12 @@ class SettingsPage extends StatelessWidget {
             color: Theme.of(context).colorScheme.secondary,
             borderRadius: BorderRadius.circular(12),
         ),
-        margin: const EdgeInsets.all(25),
+        margin: const EdgeInsets.all(24),
         padding: const EdgeInsets.all(16),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text('Dark Mode',style: TextStyle(color: Theme.of(context).colorScheme.tertiary),),
+            Text('Black Mode',style: TextStyle(color: Theme.of(context).colorScheme.tertiary),),
             CupertinoSwitch(
                 value: Provider.of<ThemeProvider>(context, listen: false).isDarkMode,
                 onChanged: (value) =>Provider.of<ThemeProvider>(context, listen: false).toggleTheme(),
